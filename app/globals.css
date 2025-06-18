@@ -63,6 +63,13 @@ html {
 /* Responsive mockup image styling */
 .mockup-image-responsive {
   @media (max-width: 991px) {
-    max-height: 400px !important;
+    max-height: 375px !important;
+  }
+}
+
+/* Responsive header padding */
+.header-responsive {
+  @media (max-width: 991px) {
+    padding-top: 32px !important;
   }
 }
