@@ -19,7 +19,7 @@ export default function Home() {
     <main className="h-screen overflow-hidden bg-adaptive">
       <div className="h-full flex flex-col">
         {/* Header */}
-        <header className="flex-shrink-0 flex justify-between items-center p-8 pb-[10px] lg:pb-8 relative z-20 header-responsive">
+        <header className="flex-shrink-0 flex justify-between items-center p-8 pb-[20px] lg:pb-8 relative z-20 header-responsive">
           <div className="relative z-30">
             <h1
               className="text-6xl md:text-8xl font-light drop-shadow-2xl text-white dark:text-white relative z-30"
@@ -27,7 +27,7 @@ export default function Home() {
             >
               <span className="dark:!text-white">Yarvis</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mt-1 font-light relative z-30">
+            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mt-0 font-light relative z-30">
               A new screensaver from{" "}
               <a
                 href="https://x.com/LetsPaddock"
