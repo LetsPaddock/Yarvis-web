@@ -19,7 +19,7 @@ export default function Home() {
     <main className="h-screen overflow-hidden bg-adaptive">
       <div className="h-full flex flex-col">
         {/* Header */}
-        <header className="flex-shrink-0 flex justify-between items-center p-8 relative z-20">
+        <header className="flex-shrink-0 flex justify-between items-center p-8 relative z-20 header-responsive">
           <div className="relative z-30">
             <h1
               className="text-6xl md:text-8xl font-light drop-shadow-2xl text-white dark:text-white relative z-30"
@@ -179,7 +179,7 @@ export default function Home() {
         {/* Footer */}
         <footer className="flex-shrink-0 text-center py-4 px-8">
           <p className="text-gray-500 dark:text-gray-300 text-sm">
-            Made with ❤️ for macOS enthusiasts
+            Made with ❤��� for macOS enthusiasts
           </p>
           <a
             href="https://twitter.com"
