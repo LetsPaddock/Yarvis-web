@@ -2,21 +2,21 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Yarvis - Macos Screensaver',
+  title: 'Yarvis - Screensaver',
   description: 'Experience the future of screensavers on macOS with Yarvis',
   icons: {
     icon: '/favicon.png',
     apple: '/apple-touch-icon.png',
   },
   openGraph: {
-    title: 'Yarvis - Macos Screensaver',
+    title: 'Yarvis - Screensaver',
     description: 'Experience the future of screensavers on macOS with Yarvis',
     images: ['/og-image.png'],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Yarvis - Macos Screensaver',
+    title: 'Yarvis - Screensaver',
     description: 'Experience the future of screensavers on macOS with Yarvis',
     images: ['/og-image.png'],
   },
