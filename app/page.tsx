@@ -140,7 +140,7 @@ export default function Home() {
                 </span>
               </h2>
               <p
-                className="text-gray-700 dark:text-gray-200 mb-6 leading-relaxed line-clamp-2 hidden sm:block"
+                className="text-gray-700 dark:text-gray-200 mb-6 leading-relaxed line-clamp-2"
                 style={{
                   fontSize: "clamp(0.875rem, 1.8vw, 1.125rem)",
                   lineHeight: "1.4",
