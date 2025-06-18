@@ -70,15 +70,15 @@ export default function Roadmap() {
               ></div>
               
               {/* Content */}
-              <div className="mt-6">
-                <h3 className={`font-semibold text-sm md:text-base mb-2 ${
+              <div className="mt-4 md:mt-6">
+                <h3 className={`font-semibold text-xs md:text-base mb-1 md:mb-2 ${
                   item.isActive 
                     ? 'text-blue-600' 
                     : 'text-gray-800 dark:text-gray-100'
                 }`}>
                   {item.title}
                 </h3>
-                <p className="text-xs md:text-sm text-gray-600 dark:text-gray-300 leading-relaxed px-2">
+                <p className="text-xs md:text-sm text-gray-600 dark:text-gray-300 leading-relaxed px-1 md:px-2">
                   {item.description}
                 </p>
               </div>

@@ -108,16 +108,16 @@ export default function Home() {
           </div>
 
           {/* Mobile/Tablet Layout - Stacked */}
-          <div className="lg:hidden flex flex-col items-center justify-center h-full space-y-2 md:space-y-0">
+          <div className="lg:hidden flex flex-col items-center justify-start h-full space-y-4 md:space-y-6 pt-4">
             {/* Mockup Image */}
-            <div className="w-full max-w-2xl">
+            <div className="w-full max-w-2xl flex-shrink-0">
               {/* Light mode mockup */}
               <Image
                 src="/Light-mode-mockup-tablet-mob.webp"
                 alt="Yarvis Screensaver Mockup"
                 width={2400}
                 height={1600}
-                className="w-full h-auto max-h-[50vh] object-contain drop-shadow-2xl dark:hidden"
+                className="w-full h-auto max-h-[40vh] object-contain drop-shadow-2xl dark:hidden"
                 priority
               />
               {/* Dark mode mockup */}
@@ -126,13 +126,13 @@ export default function Home() {
                 alt="Yarvis Screensaver Mockup"
                 width={2400}
                 height={1600}
-                className="w-full h-auto max-h-[50vh] object-contain drop-shadow-2xl hidden dark:block"
+                className="w-full h-auto max-h-[40vh] object-contain drop-shadow-2xl hidden dark:block"
                 priority
               />
             </div>
 
             {/* Content Below */}
-            <div className="w-full max-w-lg text-center px-4 md:-mt-16">
+            <div className="w-full max-w-lg text-center px-4 flex-shrink-0">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-800 dark:text-gray-100 mb-4 leading-tight">
                 Experience the Future of
                 <span className="block text-gray-600 dark:text-gray-300">
@@ -152,7 +152,7 @@ export default function Home() {
               </p>
 
               {/* Call to Action */}
-              <div className="space-y-3">
+              <div className="space-y-3 mb-8">
                 <a
                   href="https://gumroad.com"
                   target="_blank"
@@ -170,7 +170,7 @@ export default function Home() {
         </section>
 
         {/* Roadmap Section */}
-        <section className="flex-shrink-0 py-8 px-8">
+        <section className="flex-shrink-0 py-4 lg:py-8 px-8">
           <div className="max-w-4xl mx-auto text-center">
             <Roadmap />
           </div>
