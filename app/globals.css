@@ -4,14 +4,14 @@
 
 /* Background images */
 .bg-light {
-  background-image: url('/Background_1.jpg');
+  background-image: url("/Background_1.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
 .bg-dark {
-  background-image: url('/Darkmode-Background_1.jpg');
+  background-image: url("/Darkmode-Background_1.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -58,4 +58,11 @@ html {
 
 .roadmap-point.completed {
   @apply bg-gray-700 dark:bg-gray-300 border-gray-700 dark:border-gray-300;
-} 
+}
+
+/* Responsive mockup image styling */
+.mockup-image-responsive {
+  @media (max-width: 991px) {
+    max-height: 378.5px !important;
+  }
+}
