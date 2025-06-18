@@ -16,8 +16,8 @@ export default function Home() {
   }
 
   return (
-    <main className="h-screen overflow-hidden bg-adaptive">
-      <div className="h-full flex flex-col">
+    <main className="min-h-screen lg:h-screen lg:overflow-hidden bg-adaptive">
+      <div className="min-h-full lg:h-full flex flex-col">
         {/* Header */}
         <header className="flex-shrink-0 flex justify-between items-center p-8 pb-[20px] lg:pb-8 relative z-20 header-responsive">
           <div className="relative z-30">
@@ -42,7 +42,7 @@ export default function Home() {
         </header>
 
         {/* Hero Section with Overlapping Layout */}
-        <section className="flex-1 relative px-8 py-8 pt-0 lg:pt-8 min-h-0">
+        <section className="flex-grow lg:flex-1 relative px-8 py-8 pt-0 lg:pt-8 lg:min-h-0">
           {/* Desktop Layout - Overlapping */}
           <div className="hidden lg:block">
             {/* Mockup Image - Center Left */}
@@ -108,7 +108,7 @@ export default function Home() {
           </div>
 
           {/* Mobile/Tablet Layout - Stacked */}
-          <div className="lg:hidden flex flex-col items-center justify-start h-full space-y-4 md:space-y-6">
+          <div className="lg:hidden flex flex-col items-center justify-start space-y-4 md:space-y-6">
             {/* Mockup Image */}
             <div className="w-full max-w-2xl flex-shrink-0">
               {/* Light mode mockup */}
@@ -117,7 +117,7 @@ export default function Home() {
                 alt="Yarvis Screensaver Mockup"
                 width={2400}
                 height={1600}
-                className="w-full h-auto max-h-[40vh] object-contain drop-shadow-2xl dark:hidden"
+                className="w-full h-auto max-h-[50vh] lg:max-h-[40vh] object-contain drop-shadow-2xl dark:hidden"
                 priority
               />
               {/* Dark mode mockup */}
@@ -126,7 +126,7 @@ export default function Home() {
                 alt="Yarvis Screensaver Mockup"
                 width={2400}
                 height={1600}
-                className="w-full h-auto max-h-[40vh] object-contain drop-shadow-2xl hidden dark:block"
+                className="w-full h-auto max-h-[50vh] lg:max-h-[40vh] object-contain drop-shadow-2xl hidden dark:block"
                 priority
               />
             </div>
@@ -152,7 +152,7 @@ export default function Home() {
               </p>
 
               {/* Call to Action */}
-              <div className="space-y-3 mb-8">
+              <div className="space-y-3 mb-8 lg:mb-8">
                 <a
                   href="https://gumroad.com"
                   target="_blank"
