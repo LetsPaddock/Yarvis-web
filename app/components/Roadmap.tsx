@@ -42,7 +42,7 @@ export default function Roadmap() {
     },
     { 
       title: "More Widgets", 
-      description: "Weather, calendar, and custom modules",
+      description: "News, calendar, system info and more",
       isActive: false
     }
   ]
