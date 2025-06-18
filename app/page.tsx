@@ -1,18 +1,18 @@
-'use client'
+"use client";
 
-import { useState, useEffect } from 'react'
-import Image from 'next/image'
-import Roadmap from './components/Roadmap'
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import Roadmap from "./components/Roadmap";
 
 export default function Home() {
-  const [mounted, setMounted] = useState(false)
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    setMounted(true);
+  }, []);
 
   if (!mounted) {
-    return null
+    return null;
   }
 
   return (
@@ -21,14 +21,17 @@ export default function Home() {
         {/* Header */}
         <header className="flex-shrink-0 flex justify-between items-center p-8 relative z-20">
           <div className="relative z-30">
-            <h1 className="text-6xl md:text-8xl font-light drop-shadow-2xl text-white dark:text-white relative z-30" style={{ color: '#747677' }}>
+            <h1
+              className="text-6xl md:text-8xl font-light drop-shadow-2xl text-white dark:text-white relative z-30"
+              style={{ color: "#747677" }}
+            >
               <span className="dark:!text-white">Yarvis</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mt-2 font-light relative z-30">
-              A new screensaver from{' '}
-              <a 
-                href="https://x.com/LetsPaddock" 
-                target="_blank" 
+              A new screensaver from{" "}
+              <a
+                href="https://x.com/LetsPaddock"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="hover:font-bold transition-all duration-200 hover:text-gray-800 dark:hover:text-gray-100"
               >
@@ -50,7 +53,7 @@ export default function Home() {
                 alt="Yarvis Screensaver Mockup"
                 width={2400}
                 height={1600}
-                className="w-full h-auto max-h-[70vh] min-w-[700px] min-h-[480px] object-contain drop-shadow-2xl dark:hidden"
+                className="w-full h-auto max-h-[70vh] min-w-[700px] min-h-[480px] object-contain drop-shadow-2xl dark:hidden mockup-image-responsive"
                 priority
               />
               {/* Dark mode mockup */}
@@ -73,15 +76,24 @@ export default function Home() {
                     macOS Screensavers
                   </span>
                 </h2>
-                <p className="text-gray-700 dark:text-gray-200 mb-6 leading-relaxed line-clamp-2" style={{ fontSize: 'clamp(0.875rem, 1.8vw, 1.125rem)', lineHeight: '1.4' }}>
-                  Yarvis brings intelligent, beautiful, and customizable screensavers to your Mac.<br /> Transform your idle screen into a personalized experience.
+                <p
+                  className="text-gray-700 dark:text-gray-200 mb-6 leading-relaxed line-clamp-2"
+                  style={{
+                    fontSize: "clamp(0.875rem, 1.8vw, 1.125rem)",
+                    lineHeight: "1.4",
+                  }}
+                >
+                  Yarvis brings intelligent, beautiful, and customizable
+                  screensavers to your Mac.
+                  <br /> Transform your idle screen into a personalized
+                  experience.
                 </p>
-                
+
                 {/* Call to Action */}
                 <div className="space-y-3">
-                  <a 
-                    href="https://gumroad.com" 
-                    target="_blank" 
+                  <a
+                    href="https://gumroad.com"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="btn-primary inline-block"
                   >
@@ -127,15 +139,23 @@ export default function Home() {
                   macOS Screensavers
                 </span>
               </h2>
-              <p className="text-gray-700 dark:text-gray-200 mb-6 leading-relaxed line-clamp-2 md:hidden" style={{ fontSize: 'clamp(0.875rem, 1.8vw, 1.125rem)', lineHeight: '1.4' }}>
-                Yarvis brings intelligent, beautiful, and customizable screensavers to your Mac. Transform your idle screen into a personalized experience.
+              <p
+                className="text-gray-700 dark:text-gray-200 mb-6 leading-relaxed line-clamp-2 md:hidden"
+                style={{
+                  fontSize: "clamp(0.875rem, 1.8vw, 1.125rem)",
+                  lineHeight: "1.4",
+                }}
+              >
+                Yarvis brings intelligent, beautiful, and customizable
+                screensavers to your Mac. Transform your idle screen into a
+                personalized experience.
               </p>
-              
+
               {/* Call to Action */}
               <div className="space-y-3">
-                <a 
-                  href="https://gumroad.com" 
-                  target="_blank" 
+                <a
+                  href="https://gumroad.com"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary inline-block"
                 >
@@ -161,9 +181,9 @@ export default function Home() {
           <p className="text-gray-500 dark:text-gray-300 text-sm">
             Made with ❤️ for macOS enthusiasts
           </p>
-          <a 
-            href="https://twitter.com" 
-            target="_blank" 
+          <a
+            href="https://twitter.com"
+            target="_blank"
             rel="noopener noreferrer"
             className="inline-block mt-2 text-xs text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 underline"
           >
@@ -172,5 +192,5 @@ export default function Home() {
         </footer>
       </div>
     </main>
-  )
-} 
+  );
+}
