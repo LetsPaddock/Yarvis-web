@@ -67,6 +67,14 @@ html {
   }
 }
 
+/* Mobile mockup images - ensure they can be larger */
+@media (max-width: 1023px) {
+  .lg\\:hidden img {
+    min-height: 400px !important;
+    max-height: 80vh !important;
+  }
+}
+
 /* Responsive header padding */
 .header-responsive {
   @media (max-width: 991px) {
