@@ -19,7 +19,7 @@ export default function Home() {
     <main className="h-screen overflow-hidden bg-adaptive">
       <div className="h-full flex flex-col">
         {/* Header */}
-        <header className="flex-shrink-0 flex justify-between items-center p-8 relative z-20 header-responsive">
+        <header className="flex-shrink-0 flex justify-between items-center p-8 pb-0 lg:pb-8 relative z-20 header-responsive">
           <div className="relative z-30">
             <h1
               className="text-6xl md:text-8xl font-light drop-shadow-2xl text-white dark:text-white relative z-30"
@@ -42,7 +42,7 @@ export default function Home() {
         </header>
 
         {/* Hero Section with Overlapping Layout */}
-        <section className="flex-1 relative px-8 py-8 min-h-0">
+        <section className="flex-1 relative px-8 py-8 pt-0 lg:pt-8 min-h-0">
           {/* Desktop Layout - Overlapping */}
           <div className="hidden lg:block">
             {/* Mockup Image - Center Left */}
@@ -108,7 +108,7 @@ export default function Home() {
           </div>
 
           {/* Mobile/Tablet Layout - Stacked */}
-          <div className="lg:hidden flex flex-col items-center justify-start h-full space-y-4 md:space-y-6 pt-4">
+          <div className="lg:hidden flex flex-col items-center justify-start h-full space-y-4 md:space-y-6">
             {/* Mockup Image */}
             <div className="w-full max-w-2xl flex-shrink-0">
               {/* Light mode mockup */}
@@ -179,7 +179,7 @@ export default function Home() {
         {/* Footer */}
         <footer className="flex-shrink-0 text-center py-4 px-8">
           <p className="text-gray-500 dark:text-gray-300 text-sm">
-            Made with ❤��� for macOS enthusiasts
+            Made with ❤ for macOS enthusiasts
           </p>
           <a
             href="https://twitter.com"
