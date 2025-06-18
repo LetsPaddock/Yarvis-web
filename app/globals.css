@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Background images */
+.bg-light {
+  background-image: url('/Background_1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.bg-dark {
+  background-image: url('/Darkmode-Background_1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+@media (prefers-color-scheme: dark) {
+  .bg-adaptive {
+    @apply bg-dark;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .bg-adaptive {
+    @apply bg-light;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom button styles */
+.btn-primary {
+  @apply bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg;
+}
+
+.btn-secondary {
+  @apply bg-gray-200/20 backdrop-blur-sm hover:bg-gray-300/30 text-gray-700 dark:text-gray-300 font-semibold py-2 px-6 rounded-lg transition-all duration-200 border border-gray-300/30;
+}
+
+/* Roadmap styles */
+.roadmap-line {
+  @apply bg-gray-400 dark:bg-gray-600 h-0.5;
+}
+
+.roadmap-point {
+  @apply w-4 h-4 rounded-full border border-gray-400 dark:border-gray-600 bg-gray-200 dark:bg-gray-800 transition-all duration-300;
+}
+
+.roadmap-point.active {
+  @apply bg-blue-600 border-blue-600 scale-110;
+}
+
+.roadmap-point.completed {
+  @apply bg-gray-700 dark:bg-gray-300 border-gray-700 dark:border-gray-300;
+} 
