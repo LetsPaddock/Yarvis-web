@@ -110,14 +110,14 @@ export default function Home() {
           {/* Mobile/Tablet Layout - Stacked */}
           <div className="lg:hidden flex flex-col items-center justify-start space-y-4 md:space-y-6">
             {/* Mockup Image */}
-            <div className="w-full max-w-2xl flex-shrink-0">
+            <div className="w-full max-w-3xl flex-shrink-0">
               {/* Light mode mockup */}
               <Image
                 src="/Light-mode-mockup-tablet-mob.webp"
                 alt="Yarvis Screensaver Mockup"
                 width={2400}
                 height={1600}
-                className="w-full h-auto max-h-[50vh] lg:max-h-[40vh] object-contain drop-shadow-2xl dark:hidden"
+                className="w-full h-auto max-h-[70vh] lg:max-h-[40vh] object-contain drop-shadow-2xl dark:hidden"
                 priority
               />
               {/* Dark mode mockup */}
@@ -126,7 +126,7 @@ export default function Home() {
                 alt="Yarvis Screensaver Mockup"
                 width={2400}
                 height={1600}
-                className="w-full h-auto max-h-[50vh] lg:max-h-[40vh] object-contain drop-shadow-2xl hidden dark:block"
+                className="w-full h-auto max-h-[70vh] lg:max-h-[40vh] object-contain drop-shadow-2xl hidden dark:block"
                 priority
               />
             </div>
