@@ -113,7 +113,7 @@ export default function Home() {
             <div className="w-full max-w-2xl">
               {/* Light mode mockup */}
               <Image
-                src="/Light-mode-mockup.webp"
+                src="/Light-mode-mockup-tablet-mob.webp"
                 alt="Yarvis Screensaver Mockup"
                 width={2400}
                 height={1600}
@@ -122,7 +122,7 @@ export default function Home() {
               />
               {/* Dark mode mockup */}
               <Image
-                src="/Dark-mode-mockup.webp"
+                src="/Dark-mode-mockup-tablet-mob.webp"
                 alt="Yarvis Screensaver Mockup"
                 width={2400}
                 height={1600}
