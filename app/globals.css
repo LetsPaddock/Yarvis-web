@@ -37,6 +37,54 @@
   }
 }
 
+/* Sequential fade-in animations */
+@keyframes fadeInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation classes for sequential fade-ins */
+.animate-header {
+  opacity: 0;
+  animation: fadeInFromLeft 0.8s ease-out forwards;
+  animation-delay: 1.3s; /* Start after background completes (1.2s) */
+}
+
+.animate-hero {
+  opacity: 0;
+  animation: fadeInFromBottom 0.8s ease-out forwards;
+  animation-delay: 1.8s; /* Start 0.5s after header */
+}
+
+.animate-roadmap {
+  opacity: 0;
+  animation: fadeInFromBottom 0.8s ease-out forwards;
+  animation-delay: 2.3s; /* Start 0.5s after hero */
+}
+
+.animate-footer {
+  opacity: 0;
+  animation: fadeInFromBottom 0.8s ease-out forwards;
+  animation-delay: 2.8s; /* Start 0.5s after roadmap */
+}
+
 @media (prefers-color-scheme: dark) {
   .bg-adaptive {
     @apply bg-dark;

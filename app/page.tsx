@@ -19,7 +19,7 @@ export default function Home() {
     <main className="min-h-screen lg:h-screen lg:overflow-hidden bg-adaptive">
       <div className="min-h-full lg:h-full flex flex-col">
         {/* Header */}
-        <header className="flex-shrink-0 flex justify-between items-center p-8 pb-[32px] lg:pb-8 relative z-20 header-responsive">
+        <header className="flex-shrink-0 flex justify-between items-center p-8 pb-[32px] lg:pb-8 relative z-20 header-responsive animate-header">
           <div className="relative z-30">
             <h1
               className="text-6xl md:text-8xl font-light drop-shadow-2xl text-white dark:text-white relative z-30"
@@ -42,7 +42,7 @@ export default function Home() {
         </header>
 
         {/* Hero Section with Overlapping Layout */}
-        <section className="flex-grow lg:flex-1 relative px-8 py-8 pt-[32px] lg:pt-8 lg:min-h-0">
+        <section className="flex-grow lg:flex-1 relative px-8 py-8 pt-[32px] lg:pt-8 lg:min-h-0 animate-hero">
           {/* Desktop Layout - Overlapping */}
           <div className="hidden lg:block">
             {/* Mockup Image - Center Left */}
@@ -174,14 +174,14 @@ export default function Home() {
         </section>
 
         {/* Roadmap Section */}
-        <section className="flex-shrink-0 py-4 lg:py-8 px-8">
+        <section className="flex-shrink-0 py-4 lg:py-8 px-8 animate-roadmap">
           <div className="max-w-4xl mx-auto text-center">
             <Roadmap />
           </div>
         </section>
 
         {/* Footer */}
-        <footer className="flex-shrink-0 text-center py-4 px-8">
+        <footer className="flex-shrink-0 text-center py-4 px-8 animate-footer">
           <p className="text-gray-500 dark:text-gray-300 text-sm">
             Made with ❤ for macOS enthusiasts
           </p>
