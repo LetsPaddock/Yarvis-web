@@ -55,6 +55,7 @@ export default function Home() {
                 height={1600}
                 className="w-full h-auto max-h-[70vh] min-w-[700px] min-h-[480px] object-contain drop-shadow-2xl dark:hidden mockup-image-responsive"
                 priority
+                unoptimized
               />
               {/* Dark mode mockup */}
               <Image
@@ -64,6 +65,7 @@ export default function Home() {
                 height={1600}
                 className="w-full h-auto max-h-[70vh] min-w-[700px] min-h-[480px] object-contain drop-shadow-2xl hidden dark:block"
                 priority
+                unoptimized
               />
             </div>
 
@@ -119,6 +121,7 @@ export default function Home() {
                 height={1600}
                 className="w-full h-auto max-h-[50vh] lg:max-h-[40vh] object-contain drop-shadow-2xl dark:hidden"
                 priority
+                unoptimized
               />
               {/* Dark mode mockup */}
               <Image
@@ -128,6 +131,7 @@ export default function Home() {
                 height={1600}
                 className="w-full h-auto max-h-[50vh] lg:max-h-[40vh] object-contain drop-shadow-2xl hidden dark:block"
                 priority
+                unoptimized
               />
             </div>
 
