@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://yarvis-web.railway.app' : 'http://localhost:3000'),
   title: 'Yarvis - Screensaver',
   description: 'Experience the future of screensavers on macOS with Yarvis',
   icons: {
@@ -11,14 +12,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Yarvis - Screensaver',
     description: 'Experience the future of screensavers on macOS with Yarvis',
-    images: ['/og-image.png'],
+    images: ['/yarvis-banner.png'],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Yarvis - Screensaver',
     description: 'Experience the future of screensavers on macOS with Yarvis',
-    images: ['/og-image.png'],
+    images: ['/yarvis-banner.png'],
   },
 }
 
