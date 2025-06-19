@@ -4,6 +4,7 @@
 
 /* Background images */
 .bg-light {
+  background-color: #f8f8f8;
   background-image: url("/Lightmodev2.webp");
   background-size: cover;
   background-position: bottom right;
