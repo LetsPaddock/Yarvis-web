@@ -35,7 +35,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="font-sf-pro">
-      <body className="bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">
+      <body className="bg-[#f8f8f8] dark:bg-black text-black dark:text-white transition-colors duration-300">
         {children}
       </body>
     </html>
