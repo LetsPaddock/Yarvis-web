@@ -6,10 +6,6 @@ const nextConfig = {
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: false,
   },
-  experimental: {
-    // Reduce memory usage during build
-    memoryBasedWorkers: true,
-  },
   // Optimize bundle size
   swcMinify: true,
 }
