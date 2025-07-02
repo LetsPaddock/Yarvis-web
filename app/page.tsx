@@ -19,7 +19,7 @@ export default function Home() {
     <main className="min-h-screen lg:h-screen lg:overflow-hidden bg-adaptive">
       <div className="min-h-full lg:h-full flex flex-col">
         {/* Header */}
-        <header className="flex-shrink-0 flex justify-between items-center p-8 pb-[32px] lg:pb-8 relative z-20 header-responsive animate-header">
+        <header className="flex-shrink-0 flex justify-between items-center p-8 lg:pb-8 relative z-20 header-responsive animate-header pb-[32px]">
           <div className="relative z-30">
             <h1
               className="text-6xl md:text-8xl font-light drop-shadow-2xl text-white dark:text-white relative z-30"
@@ -57,6 +57,7 @@ export default function Home() {
                 priority
                 unoptimized
               />
+
               {/* Dark mode mockup */}
               <Image
                 src="/Dark-mode-mockup.webp"
@@ -94,7 +95,7 @@ export default function Home() {
                 {/* Call to Action */}
                 <div className="space-y-3">
                   <a
-                    href="https://gumroad.com"
+                    href="http://store.yarvis-macos.xyz/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-primary inline-block"
@@ -123,6 +124,7 @@ export default function Home() {
                 priority
                 unoptimized
               />
+
               {/* Dark mode mockup */}
               <Image
                 src="/Dark-mode-mockup-tablet-mob.webp"
@@ -158,7 +160,7 @@ export default function Home() {
               {/* Call to Action */}
               <div className="space-y-3 mb-8 lg:mb-8">
                 <a
-                  href="https://gumroad.com"
+                  href="http://store.yarvis-macos.xyz/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary inline-block"
